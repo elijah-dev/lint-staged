@@ -12,6 +12,7 @@ const execa = jest.fn(() =>
   })
 )
 
-execa.command = execa
-
-module.exports = execa
+module.exports = {
+  execa: execa,
+  execaCommand: execa,
+}
